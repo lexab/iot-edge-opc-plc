@@ -85,7 +85,7 @@ public class SlowFastCommon
     {
         return nodeType switch
         {
-            NodeType.Bool => (new NodeId((uint)BuiltInType.Boolean), ValueRanks.Scalar, true, null, null, null),
+            NodeType.Bool => (new NodeId((uint)BuiltInType.Boolean), ValueRanks.Scalar, true, 1, false, true),
 
             NodeType.Double => (new NodeId((uint)BuiltInType.Double), ValueRanks.Scalar, (double)0.0, double.Parse(stepSize),
                 minValue == null
